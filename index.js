@@ -7,7 +7,7 @@ score = 0
 if (readlineSync.keyInYN("Are you interested in having fun for few minutes ?\n")) {
   console.log("\nOkay ! Then let's play a fun quiz game !\n");
   console.log(chalk.bgBlue.underline("Rules:\n"), "1.If your answer is correct 2 points will be added\n 2.If your answer is wrong 1 point will be reduced")
-  console.log("\nHave fun , Let's get started ! ! ! \n")
+  console.log("\nHave fun , Let's get started ! ! ! \n");
 
   questions = [
     {
