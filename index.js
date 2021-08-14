@@ -59,7 +59,7 @@ if (readlineSync.keyInYN("Are you interested in having fun for few minutes ?\n")
 
     }
 
-    console.log(chalk.bgYellow("\n" + userName + "your current Score : ", score, "\n"));
+    console.log(chalk.bgYellow("\n" + userName + " your current Score : ", score, "\n"));
   }
 
   for (var i = 0; i < questions.length; i++) {
