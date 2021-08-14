@@ -1,12 +1,16 @@
-var readlineSync = require("readline-sync")
+var readlineSync = require("readline-sync");
 var chalk = require("chalk");
-console.log(chalk.bgYellow("Hello ! Welcome to the CLI World\n"))
+console.log(chalk.bgYellow("Hello ! Welcome to the CLI World\n"));
 
 score = 0
 
 if (readlineSync.keyInYN("Are you interested in having fun for few minutes ?\n")) {
   console.log("\nOkay ! Then let's play a fun quiz game !\n");
-  console.log(chalk.bgBlue.underline("Rules:\n"), "1.If your answer is correct 2 points will be added\n 2.If your answer is wrong 1 point will be reduced")
+
+  var userName = readlineSync.question(chalk.bgYellow("\nEnter your name\n"));
+
+  console.log(chalk.bgBlue.underline("\nRules:\n"), "1.If your answer is correct 2 points will be added\n 2.If your answer is wrong 1 point will be reduced");
+
   console.log("\nHave fun , Let's get started ! ! ! \n");
 
   questions = [
@@ -55,7 +59,7 @@ if (readlineSync.keyInYN("Are you interested in having fun for few minutes ?\n")
 
     }
 
-    console.log(chalk.bgWhite.black("\nCurrent Score : "), score, "\n");
+    console.log(chalk.bgYellow("\n" + userName + "your current Score : ", score, "\n"));
   }
 
   for (var i = 0; i < questions.length; i++) {
